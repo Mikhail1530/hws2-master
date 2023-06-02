@@ -1,37 +1,32 @@
 .App {
+    display: grid;
     --header_height: 60px;
     background: #FFFFFF;
+    height: 100vh;
 
 }
 
 .hw {
-    position: absolute;
-    width: 1280px;
-    height: 0px;
-    left: 0px;
-    top: 168px;
-
-    border: 1px solid #D9D9D9;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    border-top: 1px solid #D9D9D9;
+    padding: 20px 0 0 20px;
 }
 
 .hwTitle {
-    position: absolute;
-    width: 165px;
-    height: 27px;
-    left: 70px;
-    top: 131px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
-    
-    color: #000000;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
+}
+
+.hw1_hw2 {
+    display: grid;
+    grid-template-rows: 66% 34%;
+    margin: 50px;
+    /* row-gap: 320px; */
 
 }

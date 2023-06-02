@@ -31,7 +31,7 @@ export type MessageType = {
 export const message0 = {
     id: 0,
     user: {
-        avatar, // можно менять
+        avatar: avatar, // можно менять
         name: 'Nick Dulton',  // можно менять
     },
     message: {
