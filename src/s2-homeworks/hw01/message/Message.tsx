@@ -17,7 +17,11 @@ const Message = (props: MessagePropsType) => {
                     src={props.message.user.avatar}
                     className={s.image}
                 />
+                <div id={'hw1-time-' + props.message.id} className={s.time}>
+                    {props.message.message.time}
 
+                    {/**/}
+                </div>
             </div>
 
             <div className={s.text}>
@@ -31,11 +35,7 @@ const Message = (props: MessagePropsType) => {
 
                     {/**/}
                 </pre>
-                <div id={'hw1-time-' + props.message.id} className={s.time}>
-                    {props.message.message.time}
 
-                    {/**/}
-                </div>
             </div>
 
         </div>
