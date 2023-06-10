@@ -50,7 +50,7 @@ export const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
 
     const totalUsers = users.length
     const lastUser = users.slice(-1)[0]
-    const lastUserName = lastUser?.name.split(' ').slice(-1)[0]
+    const lastUserName = lastUser?.name
 
 
 
