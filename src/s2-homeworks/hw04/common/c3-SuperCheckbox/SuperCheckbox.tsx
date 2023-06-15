@@ -46,7 +46,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
             />
             {children && (
                 <span
-                    id={id + '-span'}
+                    id={id ? id + '-span' : undefined}
                     className={s.spanClassName}
                 >
                     {children}
