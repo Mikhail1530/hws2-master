@@ -1,34 +1,24 @@
 .sendForm {
-    display: grid;
-    /* row-gap: 50px; */
-    grid-template-areas:
-        't b b b b';
-    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
 }
 
 .textarea {
-    display: grid;
-    grid-area: t;
-    width: 800px;
-    height: 60px !important;
-    background: #F5F7FB;
     border-radius: 10px;
+    width: 550px;
+    height: 10px;
     resize: none;
+    padding: 15px;
     overflow: hidden;
 }
 
 .button {
-    display: grid;
-    grid-area: b;
-    /* margin-right: 250px; */
-    width: 120px;
-    height: 40px;
-    background: #0066CC;
-    border-radius: 20px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    color: #FFFFFF;
+    border-radius: 10px;
+    width: 90px;
+    height: 25px;
 }
 
 

@@ -1,47 +1,45 @@
-.message {
-    display: grid;
-    grid-template-columns: minmax(max-content, 40%) max-content;
-    column-gap: 10px;
-    grid-template-areas:
-        't i';
-    justify-content: flex-end;
-    margin-right: 30%;
-}
+.message {}
 
-.image {
-    width: 48px;
-    height: 48px;
-}
+.image {}
 
 .imageAndText {
-    grid-area: i;
-
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    padding-right: 50px;
 }
 
-.imageAndText img {}
+.imageAndText img {
+    height: 70px;
+}
 
 .text {
-    grid-area: t;
-    display: grid;
-    border-radius: 10px;
-    background: #0066CC;
+    background-color: rgb(71, 150, 223);
     padding: 10px;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+    max-width: 40%;
+    border-radius: 10px 10px 0 10px;
 }
 
 .text:after {}
 
 .name {
-    color: #FFFFFF;
-    justify-self: end;
-
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .messageText {
-    color: #FFFFFF;
-    justify-self: end;
-
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .time {
-    text-align: center;
+    align-items: end;
+    text-align: right;
+    padding-right: 65px;
 }

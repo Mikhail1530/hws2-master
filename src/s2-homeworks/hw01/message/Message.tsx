@@ -17,27 +17,27 @@ const Message = (props: MessagePropsType) => {
                     src={props.message.user.avatar}
                     className={s.image}
                 />
-                <div id={'hw1-time-' + props.message.id} className={s.time}>
-                    {props.message.message.time}
+                <div className={s.text}>
+                    <div id={'hw1-name-' + props.message.id} className={s.name}>
+                        {props.message.user.name}
 
-                    {/**/}
+                        {/**/}
+                    </div>
+                    <div id={'hw1-text-' + props.message.id} className={s.messageText}>
+                        {props.message.message.text}
+
+                        {/**/}
+                    </div>
+
                 </div>
             </div>
 
-            <div className={s.text}>
-                <div id={'hw1-name-' + props.message.id} className={s.name}>
-                    {props.message.user.name}
 
-                    {/**/}
-                </div>
-                <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
-                    {props.message.message.text}
+            <div id={'hw1-time-' + props.message.id} className={s.time}>
+                {props.message.message.time}
 
-                    {/**/}
-                </pre>
-
+                {/**/}
             </div>
-
         </div>
     )
 }
