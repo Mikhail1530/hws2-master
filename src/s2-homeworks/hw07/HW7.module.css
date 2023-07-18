@@ -1,2 +1,6 @@
 .container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

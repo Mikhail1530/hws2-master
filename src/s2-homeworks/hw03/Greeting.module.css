@@ -1,35 +1,35 @@
 .greetingForm {
+    margin-left: 50px;
 }
 
 .inputAndButtonContainer {
+    display: inline-flex;
+    gap: 20px;
 }
 
-.error {
-}
+.error {}
 
-.input {
-}
+.input {}
 
-.input:focus {
-}
+.input:focus {}
 
-.errorInput {
-}
+.errorInput {}
 
 .button {
+    height: 26px;
+    padding: 5px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
 }
 
-.button:focus {
-}
+.button:focus {}
 
-.button:active {
-}
+.button:active {}
 
-.button:disabled {
-}
+.button:disabled {}
 
-.text {
-}
+.text {}
 
-.greeting {
-}
+.greeting {}
