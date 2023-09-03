@@ -18,17 +18,14 @@ function Clock() {
         setTimerId(undefined)
     }
 
-    const onMouseEnter = () => {
-        const mouseTarget = document.getElementById('hw9-watch')
-        mouseTarget && mouseTarget.addEventListener('mouseenter', () => setShow(true))
-    }
+    const onMouseEnter = () => setShow(true)
     const onMouseLeave = () => setShow(false)
 
-    const stringTime = date.toLocaleTimeString('en-GB') || <br />
-    const stringDate = date.toLocaleDateString() || <br />
+    const stringTime = date.toLocaleTimeString('ru-Ru') || <br />
+    const stringDate = date.toLocaleDateString('ru-Ru') || <br />
 
-    const stringDay = date.toLocaleString('en-GB', { weekday: 'long' }) || <br />
-    const stringMonth = date.toLocaleString('en-GB', { month: 'short' }) || <br />
+    const stringDay = date.toLocaleString('en-US', { weekday: 'long' }) || <br />
+    const stringMonth = date.toLocaleString('en-GB', { month: 'long' }) || <br />
 
     return (
         <div className={s.clock}>
