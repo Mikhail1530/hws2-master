@@ -1,4 +1,6 @@
 .buttonsContainer {
+  display: flex;
+  gap: 20px;
 }
 
 .responseContainer {
@@ -10,7 +12,7 @@
 .image {
 }
 
-.textContainer{
+.textContainer {
 }
 
 .code {
